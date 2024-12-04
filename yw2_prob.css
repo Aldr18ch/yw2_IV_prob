@@ -1,0 +1,44 @@
+body {
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid;
+    text-align: center;
+}
+
+th {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+tr td:first-child {
+    border-left: none;
+}
+
+tr td:last-child {
+    border-right: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.border_rounded {
+    border: 2px solid;
+    border-radius: 0.5em;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.button {
+    font-size: 125%;
+    width: 6em;
+    height: 3em;
+    border-radius: 0.5em
+}

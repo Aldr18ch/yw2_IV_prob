@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <link rel="stylesheet" href="./yw2_prob.css">
+    <script src="yw2_prob.js"></script>
+    <div class="border_rounded">
+        <table>
+            <th colspan="2">個体値の範囲</th>
+            <tr>
+                <td>HP</td>
+                <td>
+                    <input type="tel" maxlength="2" id="h_min" size="2" value="0"></input>以上
+                    <input type="tel" maxlength="2" id="h_max" size="2" value="80"></input>以下
+                </td>
+            </tr>
+            <tr>
+                <td>ちから</td>
+                <td>
+                    <input type="tel" maxlength="2" id="a_min" size="2" value="0"></input>以上
+                    <input type="tel" maxlength="2" id="a_max" size="2" value="40"></input>以下
+                </td>
+            </tr>
+            <tr>
+                <td>ようりょく</td>
+                <td>
+                    <input type="tel" maxlength="2" id="m_min" size="2" value="0"></input>以上
+                    <input type="tel" maxlength="2" id="m_max" size="2" value="40"></input>以下
+                </td>
+            </tr>
+            <tr>
+                <td>まもり</td>
+                <td>
+                    <input type="tel" maxlength="2" id="d_min" size="2" value="0"></input>以上
+                    <input type="tel" maxlength="2" id="d_max" size="2" value="40"></input>以下
+                </td>
+            </tr>
+            <tr>
+                <td>すばやさ</td>
+                <td>
+                    <input type="tel" maxlength="2" id="s_min" size="2" value="0"></input>以上
+                    <input type="tel" maxlength="2" id="s_max" size="2" value="40"></input>以下
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <input type="button" value="計算" class="button" onclick="calculate()"></input>
+    <div></div>
+    <br>
+    <div class="border_rounded">
+        <table>
+            <th colspan="2">結果</th>
+            <tr>
+                <td>確率</td>
+                <td>
+                    <span id="prb"></span>%
+                </td>
+            </tr>
+            <tr>
+                <td>期待値</td>
+                <td>
+                    <span id="expc"></span>回
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
